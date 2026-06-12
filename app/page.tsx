@@ -34,18 +34,18 @@ const WAEHLBAR = [
 const FIXED_FAECHER: Fach[] = [
   { id: "biologie", name: "Biologie", multiplikator: 4, kategorie: "Hosp" },
   { id: "kunst", name: "Kunst", multiplikator: 4, kategorie: "Hosp" },
-  { id: "englisch", name: "Englisch", multiplikator: 3, kategorie: "Spr" },
-  { id: "russisch", name: "Russisch", multiplikator: 3, kategorie: "Spr" },
+  { id: "englisch", name: "Englisch", multiplikator: 4, kategorie: "Spr" },
+  { id: "russisch", name: "Russisch", multiplikator: 4, kategorie: "Spr" },
 ];
 
 const KATEGORIEN: { id: Kategorie; label: string }[] = [
   { id: "LK", label: "Leistungskurse × 13" },
   { id: "GK", label: "Grundkurse × 9" },
   { id: "Hosp", label: "Hospitationsfächer × 4" },
-  { id: "Spr", label: "Sprachen × 3" },
+  { id: "Spr", label: "Sprachen × 4" },
 ];
 
-const GESAMT_GEWICHT = 13 + 13 + 9 + 9 + 4 + 4 + 3 + 3; // 58
+const GESAMT_GEWICHT = 13 + 13 + 9 + 9 + 4 + 4 + 4 + 4; // 60
 
 function noteColor(note: number): string {
   if (note < 2.0) return "#4ade80";
